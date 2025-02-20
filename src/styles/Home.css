@@ -48,3 +48,49 @@ header {
   width: 100%;
   border-radius: 10px;
 }
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #d93636;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #d93636;
+}
+
+.undo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.undo-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.undo-btn:hover {
+  background-color: #218838;
+}
