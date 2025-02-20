@@ -22,3 +22,92 @@ button {
 button:hover {
   background-color: #ff6347;
 }
+
+.recipe-detail-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.recipe-detail-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.favorite-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.favorite-btn:hover {
+  color: red;
+}
+
+.recipe-detail-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-detail-container li {
+  background: #f8f8f8;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.dark-mode .recipe-detail-container li {
+  background: #444;
+}
+
+/* Ensure text is readable in Dark Mode */
+.recipe-detail-container h1,
+.recipe-detail-container h3,
+.recipe-detail-container p {
+  color: black;
+}
+
+/* Adjust for Dark Mode */
+.dark-mode .recipe-detail-container h1,
+.dark-mode .recipe-detail-container h3,
+.dark-mode .recipe-detail-container p {
+  color: white;
+}
+
+/* Ensure the Back Button is visible */
+.recipe-detail-container button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-detail-container button:hover {
+  background-color: #ff6347;
+}
+
+.dark-mode .recipe-detail-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}

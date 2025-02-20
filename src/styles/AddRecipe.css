@@ -8,17 +8,26 @@
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+/* Fix text visibility */
+.add-recipe-container h1,
+.add-recipe-container label,
+.add-recipe-container p {
+  color: black;
 }
 
-label {
-  text-align: left;
-  margin-top: 10px;
-  font-weight: bold;
+/* Dark Mode Fix */
+.dark-mode .add-recipe-container {
+  background-color: #222;
+  color: white;
 }
 
+.dark-mode .add-recipe-container h1,
+.dark-mode .add-recipe-container label,
+.dark-mode .add-recipe-container p {
+  color: white;
+}
+
+/* Ensure input fields & textareas have proper contrast */
 input,
 textarea {
   width: 100%;
@@ -26,18 +35,21 @@ textarea {
   margin-top: 5px;
   border-radius: 5px;
   border: 1px solid #ddd;
+  background-color: white;
+  color: black;
 }
 
-button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #ff7f50;
+/* Adjust for Dark Mode */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border: 1px solid #666;
 }
 
-button:hover {
-  background-color: #ff6347;
+.dark-mode .add-recipe-container {
+  background-color: #282c35;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
